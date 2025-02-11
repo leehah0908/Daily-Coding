@@ -1,12 +1,7 @@
 def solution(string):
     str_stack = []
 
-    if string[0] == ')':
-        return False
-    else:
-        str_stack.append(string[0])
-
-    for i in string[1:]:
+    for i in string:
         if i == '(':
             str_stack.append(i)
         elif i == ')':
